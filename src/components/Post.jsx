@@ -1,9 +1,11 @@
-function Post() {
+const names = ['Lianne', 'Gabriel'];
+
+function Post(props) {
   return (
-  <div>
-    <p>Lianne</p>
-    <p>React.js is Awesome!</p>
-  </div>
+    <div>
+      <p>{props.author}</p>
+      <p>{props.body}</p>
+    </div>
   );
 }
 
